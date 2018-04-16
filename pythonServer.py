@@ -8,6 +8,7 @@ import threading
 
 
 class websocket_thread(threading.Thread):
+    'ceshi'
     def __init__(self, connection):
         super(websocket_thread, self).__init__()
         self.connection = connection
@@ -79,6 +80,7 @@ class websocket_thread(threading.Thread):
             message_byte += c
         message_byte += bytes(message, encoding="utf8")
         print("message_str : ", str(message_byte))
+        
         # print("message_byte : ", bytes(message_str, encoding="utf8"))
         # print(message_str[0], message_str[4:])
         # self.connection.send(bytes("0x810x010x63", encoding="utf8"))
