@@ -8,7 +8,7 @@ import threading
 
 
 class websocket_thread(threading.Thread):
-    'ceshi,ceshi2'
+    'ceshi,ceshi2,ceshi3'
     def __init__(self, connection):
         super(websocket_thread, self).__init__()
         self.connection = connection
